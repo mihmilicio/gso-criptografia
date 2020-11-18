@@ -1,6 +1,6 @@
 # gso-criptografia
 
-Trabalho realizado para a disciplina de Gestão de Sistemas Operacionais, cuja proposta era criar uma criptografia.
+Trabalho realizado para a disciplina de Gestão de Sistemas Operacionais, cuja proposta era criar uma criptografia. Foi desenvolvida utilizando Javascript, com uma interface básica para os dados em HTML5.
 
 ## Como funciona?
 
@@ -12,7 +12,7 @@ Para fazer a descriptografia, a string é invertida, e traduzida a partir da key
 
 Nessa primeira versão, ela funciona apenas para letras minúsculas e espaços.
 
-## Exemplo
+## Exemplo - algoritmo
 
 Criptografando a palavra "code" com a key "m"
 ```
@@ -35,3 +35,9 @@ o X q = c
 Para concluir, invertemos a palavra de volta, para voltá-la ao normal.
 
 "qrhq" ==> "code"
+
+## Evidências
+
+![](https://i.imgur.com/gVuxBQv.png)
+![](https://i.imgur.com/Ioz4pNx.png)
+![](https://i.imgur.com/5pN1b2U.png)
