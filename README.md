@@ -11,3 +11,13 @@ A criptografia criada funciona da seguinte forma: seguindo a tabela acima, a key
 Para fazer a descriptografia, a string é invertida, e traduzida a partir da key do usuário.
 
 Nessa primeira versão, ela funciona apenas para letras minúsculas e espaços.
+
+## Exemplo
+
+Criptografando a palavra "code" com a key "m"
+c X o = q
+o X d = r
+d X e = h
+e X m = q
+
+"code" ==> "qrhq"
