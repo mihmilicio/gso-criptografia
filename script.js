@@ -1,5 +1,6 @@
 function encrypt() {
   const val = document.getElementById('normal').value;
+  const userKey = document.getElementById('key').value;
   console.log('encrypt ', val);
   const word = val.split('');
 
@@ -10,7 +11,7 @@ function encrypt() {
       encrypted.push(letter);
     } else {
       const alphabet = mountAlphabet(letter);
-      const next = getCharacterIndex(getNextNonSpace(word, index) || 'm');
+      const next = getCharacterIndex(getNextNonSpace(word, index) || userKey);
       encrypted.push(alphabet[next]);
     }
   });
@@ -20,6 +21,7 @@ function encrypt() {
 
 function decrypt() {
   let val = document.getElementById('cripto').value;
+  const userKey = document.getElementById('key').value;
   console.log('decrypt ', val);
   const word = val.split('').reverse();
 
@@ -28,7 +30,7 @@ function decrypt() {
     if (letter == ' ') {
       decrypted.push(letter);
     } else {
-      const key = getPrevNonSpace(decrypted, index) || 'm';
+      const key = getPrevNonSpace(decrypted, index) || userKey;
       const alphabet = mountAlphabet(key);
 
       const nextCode = alphabet.indexOf(letter) + 97;
