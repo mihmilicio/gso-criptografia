@@ -15,9 +15,10 @@ Nessa primeira versão, ela funciona apenas para letras minúsculas e espaços.
 ## Exemplo
 
 Criptografando a palavra "code" com a key "m"
+```
 c X o = q
 o X d = r
 d X e = h
 e X m = q
-
+```
 "code" ==> "qrhq"
