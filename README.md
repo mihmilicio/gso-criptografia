@@ -22,3 +22,16 @@ d X e = h
 e X m = q
 ```
 "code" ==> "qrhq"
+
+Descriptografando a string "qrhq" com a key "m"
+Inverteremos a string, e usaremos a key do usuário por primeiro.
+O esquema de busca na tabela também é invertido: olharemos na coluna da primeira letra, procurando a segunda, para descobrir a letra-resposta (linha).
+```
+m X q = e
+e X h = d
+d X r = o
+o X q = c
+```
+Para concluir, invertemos a palavra de volta, para voltá-la ao normal.
+
+"qrhq" ==> "code"
